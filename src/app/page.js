@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Search, CheckCircle } from "lucide-react";
 import Button from "@/components/button";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
 

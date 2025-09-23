@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export default function Button({ className, variant = "default", ...props }) {
+export default function button({ className, variant = "default", ...props }) {
   return (
     <button
       className={cn(
