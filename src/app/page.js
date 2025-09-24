@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       {/* Navbar */}
-      <header className="flex justify-between items-center px-8 py-4 shadow-sm">
+      {/* <header className="flex justify-between items-center px-8 py-4 shadow-sm">
         <div className="text-2xl font-bold">EdA</div>
         <div className="flex items-center space-x-4">
           <input
@@ -16,7 +16,37 @@ export default function Home() {
           <button className="px-4 py-2 bg-gray-100 rounded-lg">Login</button>
           <button className="px-4 py-2 bg-yellow-400 rounded-lg font-medium">Sign Up</button>
         </div>
-      </header>
+      </header> */}
+
+      <header className="flex justify-between items-center px-8 py-4 bg-white shadow-sm">
+  {/* Left: Logo */}
+  <div className="text-2xl font-bold font-serif">EdA</div>
+
+  {/* Center: Search Bar */}
+  <div className="flex-1 flex justify-center">
+    <div className="flex items-center border rounded-full overflow-hidden w-96 max-w-lg">
+      <input
+        type="text"
+        placeholder="What do you want to learn?"
+        className="px-4 py-2 w-full outline-none"
+      />
+      <button className="bg-yellow-400 p-2 px-3 flex items-center justify-center">
+        <span className="text-white font-bold">{'➔'}</span>
+      </button>
+    </div>
+  </div>
+
+  {/* Right: Auth Buttons */}
+  <div className="flex items-center space-x-4">
+    <button className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+      Login
+    </button>
+    <button className="px-4 py-2 bg-yellow-400 rounded-lg font-medium hover:bg-yellow-500">
+      Sign Up
+    </button>
+  </div>
+</header>
+
 
       {/* Hero Section */}
       <section className="flex justify-between items-center px-16 py-12">
