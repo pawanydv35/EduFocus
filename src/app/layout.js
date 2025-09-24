@@ -1,8 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import button from "../../components/button";
-import { cn } from "@/lib/utils";
-import clsx from "clsx";
 
 
 const geistSans = Geist({
@@ -23,8 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-      <button/>
+      <body className="font-sans bg-white text-gray-900">
         {children}
       </body>
     </html>
