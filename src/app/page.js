@@ -5,48 +5,35 @@ export default function Home() {
   return (
     <main>
       {/* Navbar */}
-      {/* <header className="flex justify-between items-center px-8 py-4 shadow-sm">
-        <div className="text-2xl font-bold">EdA</div>
-        <div className="flex items-center space-x-4">
-          <input
-            type="text"
-            placeholder="What do you want to learn?"
-            className="px-3 py-2 border rounded-lg w-64"
-          />
-          <button className="px-4 py-2 bg-gray-100 rounded-lg">Login</button>
-          <button className="px-4 py-2 bg-yellow-400 rounded-lg font-medium">Sign Up</button>
-        </div>
-      </header> */}
-
-      <header className="flex justify-between items-center px-8 py-4 bg-white shadow-sm">
+ <header className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
   {/* Left: Logo */}
-  <div className="text-2xl font-bold font-serif">EdA</div>
+  
+    <div className="text-2xl font-handwriting font-bold text-black">
+        EdA
+      </div>
 
   {/* Center: Search Bar */}
-  <div className="flex-1 flex justify-center">
-    <div className="flex items-center border rounded-full overflow-hidden w-96 max-w-lg">
-      <input
-        type="text"
-        placeholder="What do you want to learn?"
-        className="px-4 py-2 w-full outline-none"
-      />
-      <button className="bg-yellow-400 p-2 px-3 flex items-center justify-center">
-        <span className="text-white font-bold">{'➔'}</span>
-      </button>
-    </div>
-  </div>
+ 
+   <div className="flex items-center w-[300px] border border-yellow-400 rounded-full overflow-hidden">
+        <input
+          type="text"
+          placeholder="What do you want to learn"
+          className="flex-1 px-4 py-2 outline-none text-sm"
+        />
+        <button className="bg-yellow-400 p-2 px-4">
+          <span className="text-white font-bold">{'➔'}</span>
+        </button>
+      </div>
 
   {/* Right: Auth Buttons */}
-  <div className="flex items-center space-x-4">
-    <button className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
-      Login
-    </button>
-    <button className="px-4 py-2 bg-yellow-400 rounded-lg font-medium hover:bg-yellow-500">
-      Sign Up
-    </button>
-  </div>
+  
+   <div className="flex items-center gap-3">
+        <button className="px-4 py-2 border rounded-md">Login</button>
+        <button className="px-4 py-2 bg-yellow-400 text-white font-semibold rounded-md">
+          Sign up
+        </button>
+      </div>
 </header>
-
 
       {/* Hero Section */}
       <section className="flex justify-between items-center px-16 py-12">
