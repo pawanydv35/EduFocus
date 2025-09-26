@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white px-16 py-12">
       <div className="flex justify-between">
@@ -38,6 +38,7 @@ function Footer() {
       <p className="text-gray-400 text-sm mt-8">© 2025 EdA. All rights reserved.</p>
     </footer>
   );
-}
+};
 
 export default Footer;
+

@@ -42,7 +42,7 @@ function LandingPage() {
           </button>
         </div>
         <div>
-          <img src="/hero.png" alt="Hero" width={350} height={350} />
+          <img src="/src/assets/hero.png" alt="Hero" width={350} height={350} />
         </div>
       </section>
 
