@@ -47,17 +47,20 @@ function LandingPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="px-16 py-12">
-        <h2 className="text-2xl font-bold mb-8">Why Choose Us</h2>
-        <div className="grid grid-cols-4 gap-6">
-          {features.map((f, i) => (
-            <div key={i} className="p-6 border rounded-lg text-center">
-              <div className="text-3xl mb-4 text-yellow-500">{f.icon}</div>
-              <h3 className="font-semibold">{f.title}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
+     <section className="py-2">
+      <h2 className="text-2xl font-bold mb-9 text-left px-2">Why Choose Us</h2>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center border rounded-lg p-6 shadow-sm"
+          >
+            <span className="text-4xl mb-3 text-yellow-500">{item.icon}</span>
+            <p className="text-lg font-medium text-center">{item.title}</p>
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* Featured Courses */}
       <section className="px-16 py-12 bg-gray-50">
