@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
+    <header className="flex justify-between items-center">
       {/* Left: Logo */}
       <div className="text-2xl font-handwriting font-bold text-black">
         EdA
