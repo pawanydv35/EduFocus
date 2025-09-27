@@ -46,37 +46,42 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-     <section className="py-2">
-      <h2 className="text-2xl font-bold mb-9 text-left px-2">Why Choose Us</h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-        {features.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center border rounded-lg p-6 shadow-sm"
-          >
-            <span className="text-4xl mb-3 text-yellow-500">{item.icon}</span>
-            <p className="text-lg font-medium text-center">{item.title}</p>
-          </div>
-        ))}
-      </div>
-    </section>
 
-      {/* Featured Courses */}
-      <section className="px-16 py-12 bg-gray-50">
-        <h2 className="text-2xl font-bold mb-8">Featured Courses</h2>
-        <div className="grid grid-cols-4 gap-6">
-          {courses.map((c, i) => (
-            <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={c.img} alt={c.title} className="w-full h-40 object-cover" />
-              <div className="p-4">
-                <h3 className="font-semibold mb-2">{c.title}</h3>
-                <p className="text-gray-500 text-sm">By {c.instructor}</p>
-              </div>
-            </div>
-          ))}
+    {/* Why Choose Us */}
+  <section className="px-16 py-12 bg-white">
+  <h2 className="text-2xl font-bold mb-9 text-left">Why Choose Us</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    {features.map((item, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center border rounded-lg p-6 shadow-sm"
+      >
+        <span className="text-4xl mb-3 text-yellow-500">{item.icon}</span>
+        <p className="text-lg font-medium text-center">{item.title}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+{/* Featured Courses */}
+<section className="px-16 py-12 bg-gray-50">
+  <h2 className="text-2xl font-bold mb-8 text-left">Featured Courses</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    {courses.map((c, i) => (
+      <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
+        <img
+          src={c.img}
+          alt={c.title}
+          className="w-full h-40 object-cover"
+        />
+        <div className="p-4">
+          <h3 className="font-semibold mb-2">{c.title}</h3>
+          <p className="text-gray-500 text-sm">By {c.instructor}</p>
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* How It Works */}
       <section className="px-16 py-12">
