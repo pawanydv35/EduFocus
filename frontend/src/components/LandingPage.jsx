@@ -73,16 +73,16 @@ function LandingPage() {
     <>
       {/* Hero Section */}
       <section className="flex justify-between items-center px-16 py-12">
-        <div className="max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">
+        <div className="text-left max-w-lg">
+          <h1 className="text-4xl font-bold mb-6">
             Unlock Your Future with{" "}
-            <span className="text-yellow-500">World-Class Learning</span>
+            <span className="text-left">World-Class Learning</span>
           </h1>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-3 text-gray-600">
             Gain in-demand knowledge, grow your career, and learn from top
             instructors—anytime, anywhere.
           </p>
-          <button className="px-6 py-3 bg-yellow-400 font-medium rounded-lg">
+          <button className="px-5 py-2 bg-yellow-400 font-medium rounded-lg">
             Get Started
           </button>
         </div>
