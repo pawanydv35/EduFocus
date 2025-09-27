@@ -10,10 +10,10 @@ function LandingPage() {
   ];
 
   const courses = [
-    { img: "/uiux.png", title: "UI/UX Design Essentials", instructor: "John Smith" },
-    { img: "/fullstack.png", title: "Full Stack Development", instructor: "Jane Doe" },
-    { img: "/data.png", title: "Data Analysis Python", instructor: "Mike Ross" },
-    { img: "/digital.png", title: "Digital Marketing 101", instructor: "Sara Lee" },
+    { img: "/src/assets/uiux.png", title: "UI/UX Design Essentials", instructor: "John Smith" },
+    { img: "/src/assets/fullstack.png", title: "Full Stack Development", instructor: "Jane Doe" },
+    { img: "/src/assets/data.png", title: "Data Analysis Python", instructor: "Mike Ross" },
+    { img: "/src/assets/digital.png", title: "Digital Marketing 101", instructor: "Sara Lee" },
   ];
 
   const steps = ["Sign Up", "Choose Courses", "Start Learning", "Earn Certificates"];
