@@ -1,5 +1,6 @@
 import React from "react";
-import { FaUsers, FaCheckCircle, FaCertificate, FaInfinity } from "react-icons/fa";
+import { FaUsers, FaInfinity } from "react-icons/fa";
+import { FaUserPlus, FaGraduationCap, FaDesktop, FaCertificate, FaUserTie, FaChalkboardTeacher, FaCheckCircle, FaChartLine } from "react-icons/fa";
 
 function LandingPage() {
   const features = [
@@ -22,6 +23,50 @@ function LandingPage() {
     { name: "Robert K.", text: "Great platform to upskill quickly!" },
     { name: "Samrat T.", text: "The instructors are amazing and supportive." },
     { name: "Monica S.", text: "Loved the UI/UX course. Very practical!" },
+  ];
+
+  const Arrow = ({ color = "gray" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 50"
+    className="w-24 h-8"
+    fill="none"
+  >
+    <path
+      d="M5 25 C 25 5, 75 45, 95 25"
+      stroke={color}
+      strokeWidth="2"
+      strokeDasharray="4 4"
+      fill="transparent"
+      markerEnd="url(#arrowhead)"
+    />
+    <defs>
+      <marker
+        id="arrowhead"
+        markerWidth="6"
+        markerHeight="6"
+        refX="5"
+        refY="3"
+        orient="auto"
+      >
+        <path d="M0,0 L0,6 L6,3 z" fill={color} />
+      </marker>
+    </defs>
+  </svg>
+);
+
+  const studentSteps = [
+    { icon: <FaUserPlus />, text: "Sign Up" },
+    { icon: <FaGraduationCap />, text: "Choose Courses" },
+    { icon: <FaDesktop />, text: "Start Learning" },
+    { icon: <FaCertificate />, text: "Earn Certificates" },
+  ];
+
+  const teacherSteps = [
+    { icon: <FaUserTie />, text: "Create an Account" },
+    { icon: <FaChalkboardTeacher />, text: "Build Your Course" },
+    { icon: <FaCheckCircle />, text: "Publish & Teach" },
+    { icon: <FaChartLine />, text: "Track Students’ Progress" },
   ];
 
   return (
@@ -84,19 +129,53 @@ function LandingPage() {
 </section>
 
       {/* How It Works */}
-      <section className="px-16 py-12">
-        <h2 className="text-2xl font-bold mb-8">How It Works</h2>
-        <div className="flex justify-between items-center text-center">
-          {steps.map((s, i) => (
-            <div key={i}>
-              <div className="w-12 h-12 mx-auto rounded-full bg-yellow-400 flex items-center justify-center text-lg font-bold">
-                ✓
+     <section className="py-12 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Heading */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-12">How It Works</h2>
+
+        {/* Student Section */}
+        <div className="mb-12">
+          <h3 className="text-gray-500 text-sm mb-6">As a Student</h3>
+          <div className="flex items-center justify-center">
+            {studentSteps.map((step, index) => (
+              <div key={index} className="flex items-center">
+                {/* Step */}
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-black text-white w-12 h-12 flex items-center justify-center rounded-full text-xl mb-3">
+                    {step.icon}
+                  </div>
+                  <p className="text-sm font-medium text-gray-800">{step.text}</p>
+                </div>
+                {/* Arrow */}
+                {index < studentSteps.length - 1 && <Arrow color="black" />}
               </div>
-              <p className="mt-2">{s}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </section>
+
+        {/* Teacher Section */}
+        <div>
+          <h3 className="text-gray-500 text-sm mb-6">As a Teacher</h3>
+          <div className="flex items-center justify-center">
+            {teacherSteps.map((step, index) => (
+              <div key={index} className="flex items-center">
+                {/* Step */}
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-yellow-400 text-black w-12 h-12 flex items-center justify-center rounded-full text-xl mb-3">
+                    {step.icon}
+                  </div>
+                  <p className="text-sm font-medium text-gray-800">{step.text}</p>
+                </div>
+                {/* Arrow */}
+                {index < teacherSteps.length - 1 && <Arrow color="#facc15" />}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
 
       {/* Testimonials */}
       <section className="px-16 py-12 bg-gray-50">
