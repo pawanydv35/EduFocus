@@ -1,7 +1,9 @@
 import './App.css';
 import Footer from './components/Footer';
-import LandingPage from './components/Landingpage';
+import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
+import SignupFlow from "./components/SignupFlow";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,6 +13,15 @@ function App() {
       <LandingPage/>
       <Footer/>
     </div>
+   
+    <Router>
+      <Routes>
+        
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signup" element={<SignupFlow />} />
+      </Routes>
+    </Router>
+
     </>
   )
 }

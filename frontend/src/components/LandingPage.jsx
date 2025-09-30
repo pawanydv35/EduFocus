@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaUsers, FaInfinity } from "react-icons/fa";
 import { FaUserPlus, FaGraduationCap, FaDesktop, FaCertificate, FaUserTie, FaChalkboardTeacher, FaCheckCircle, FaChartLine } from "react-icons/fa";
+import SignupFlow from "./SignupFlow";
 
 function LandingPage() {
   const features = [
@@ -82,9 +84,9 @@ function LandingPage() {
             Gain in-demand knowledge, grow your career, and learn from top
             instructors—anytime, anywhere.
           </p>
-          <button className="px-5 py-2 bg-yellow-400 font-medium rounded-lg">
+          <Link to={SignupFlow} className="px-5 py-2 bg-yellow-400 font-medium rounded-lg">
             Get Started
-          </button>
+          </Link>
         </div>
         <div>
           <img src="/src/assets/hero.png" alt="Hero" width={350} height={350} />
