@@ -113,7 +113,7 @@ function LandingPage() {
             Gain in-demand knowledge, grow your career, and learn from top
             instructors—anytime, anywhere.
           </p>
-          <Link to={SignupFlow} className="px-5 py-2 bg-yellow-400 font-medium rounded-lg">
+          <Link to="/login" className="px-5 py-2 bg-yellow-400 font-medium rounded-lg">
             Get Started
           </Link>
         </div>
