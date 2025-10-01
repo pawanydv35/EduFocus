@@ -1,6 +1,7 @@
 import './App.css';
 import LandingPage from './components/LandingPage';
 import LoginPage from './components/LoginPage';
+import SignupPage from './components/SignupPage';
 import SignupFlow from "./components/SignupFlow";
 import { Route, Routes } from 'react-router-dom';
 
