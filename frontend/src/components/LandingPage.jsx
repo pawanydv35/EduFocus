@@ -94,10 +94,10 @@ function LandingPage() {
 
       {/* Right: Auth Buttons */}
       <div className="flex items-center gap-3">
-        <button className="px-4 py-2 border rounded-md">Login</button>
-        <button className="px-4 py-2 bg-yellow-400 text-white font-semibold rounded-md">
+        <Link to="/login" className="px-4 py-2 border rounded-md">Login</Link>
+        <Link className="px-4 py-2 bg-yellow-400 text-white font-semibold rounded-md">
           Sign up
-        </button>
+        </Link>
       </div>
     </header>
 
