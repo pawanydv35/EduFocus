@@ -109,7 +109,7 @@ function LandingPage() {
             Unlock Your Future with{" "}
             <span className="text-left">World-Class Learning</span>
           </h1>
-          <p className="mb-3 text-gray-600">
+          <p className="mb-5 text-gray-600">
             Gain in-demand knowledge, grow your career, and learn from top
             instructors—anytime, anywhere.
           </p>
